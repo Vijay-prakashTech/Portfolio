@@ -165,13 +165,15 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: rgb(22, 18, 44);
+    background: url('images/Splashes.gif');
+    background-size: cover;
     height: 100vh;
     color: #fff;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
+    
 }
 .home .max-width{
   width: 100%;
@@ -225,8 +227,11 @@ section .title::after{
     width: 400px;
     object-fit: cover;
     /* border-radius: 6px; */
-    
+    border: 10px solid black;
     border-radius: 200px;
+}
+.about .about-content .left img:hover{
+    border-color:crimson ;
 }
 .about .about-content .right{
     width: 55%;
@@ -263,6 +268,9 @@ section .title::after{
 .services, .teams{
     color:#fff;
     background: #111;
+}
+.services{
+    background: url('images/Splashes.gif');
 }
 .services .title::before,
 .teams .title::before{
@@ -365,7 +373,7 @@ section .title::after{
     background: crimson;
 }
 .skills-content .right .html::before{
-    width: 90%;
+    width: 80%;
 }
 .skills-content .right .css::before{
     width: 50%;
@@ -374,18 +382,31 @@ section .title::after{
     width: 30%;
 }
 .skills-content .right .php::before{
-    width: 60%;
+    width: 50%;
 }
 .skills-content .right .mysql::before{
     width: 80%;
 }
+.skills-content .right .c::before{
+    width: 60%;
+}
+
+.skills-content .right .cc::before{
+    width: 60%;
+}
+
+.skills-content .right .git::before{
+    width: 30%;
+}
+
 
 /* teams section styling */
 .teams .title::after{
-    content: "who with me";
+    content: "Click To view";
 }
+
 .teams .carousel .card{
-    background: #222;
+    background: url('images/Splashes.gif');
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -678,6 +699,7 @@ footer span a:hover{
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+        scroll-behavior: smooth;
     }
 }
 .Contact-icons{
@@ -693,12 +715,32 @@ footer span a:hover{
     margin-top: 10px;
 }
 .img{
-    padding: 7px 8px;
+  
 width: 60px;
 background: black;
 border: 2px solid white;
-padding: 7px;
+padding: 3px;
 background:black;
 border-radius: 40px;
 margin-top: 10px;
 }
+
+.button{
+    color: #fff;
+    display: block;
+    width: 160px!important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background: crimson;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+  }
+ .button:hover{
+    color: white;
+    background: black;
+  }
