@@ -404,7 +404,11 @@ section .title::after{
 .teams .title::after{
     content: "Click To view";
 }
-
+.teams{
+    background:url('images/teams_bg.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .teams .carousel .card{
     background: url('images/Splashes.gif');
     border-radius: 6px;
@@ -412,6 +416,7 @@ section .title::after{
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
+    border: 5px solid crimson;
 }
 .teams .carousel .card:hover{
     background: crimson;
@@ -468,6 +473,12 @@ section .title::after{
 .contact .title::after{
     content: "get in touch";
 }
+.contact{
+    background: url('images/Contact_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
@@ -498,10 +509,11 @@ section .title::after{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: white;
 }
 .contact .right form .fields{
     display: flex;
+    
 }
 .contact .right form .field,
 .contact .right form .fields .field{
@@ -512,6 +524,7 @@ section .title::after{
 .contact .right form .textarea{
     height: 80px;
     width: 100%;
+    color: black;
 }
 .contact .right form .name{
     margin-right: 10px;
@@ -520,13 +533,14 @@ section .title::after{
 .contact .right form .textarea textarea{
     height: 100%;
     width: 100%;
-    border: 1px solid lightgrey;
+    border: 2px solid lightgrey;
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
+    background-color:whitesmoke;
 }
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus{
