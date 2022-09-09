@@ -217,7 +217,7 @@ section .title::after{
 
 /* about section styling */
 .about .title::after{
-    content: "who i am";
+    content: "Who I Am";
 }
 .about .about-content .left{
     width: 45%;
@@ -402,7 +402,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "Click To view";
+    content: "Click To View";
 }
 .teams{
     background:url('images/teams_bg.jpg') ;
